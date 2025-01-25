@@ -1,0 +1,42 @@
+.privacyPolicyContainer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.privacyPolicyTitle1 {
+    font-family: serif;
+    text-align: center;
+    font-size: 100px !important;
+    margin: 40px;
+}
+.privacyPolicyParagraph1 {
+    text-align: center;
+    font-size: 20px !important;
+}
+.privacyPolicyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 10%;
+    margin: 0 auto;
+   
+}
+.sectionTitle {
+    font-weight: bold;
+    color: #003067;
+    margin-bottom: 10px;
+}
+.subsectionTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+     color: #003067;
+}
+.paragraph {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #003067
+}
