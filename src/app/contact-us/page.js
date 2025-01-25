@@ -1,13 +1,13 @@
+import ContactForm from "@/components/ContactUs/ContactForm";
 import Footer from "@/components/Footer/Footer";
-import FAQSection from "@/components/FAQSection/FAQSection";
 import Header from "@/components/Header/Header";
 import React from "react";
 
-export default function page() {
+export default function Contact() {
   return (
     <div>
       <Header />
-      <FAQSection />
+      <ContactForm />
       <Footer />
     </div>
   );
