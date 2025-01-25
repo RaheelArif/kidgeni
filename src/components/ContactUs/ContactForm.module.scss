@@ -7,26 +7,22 @@
 .contactFormTitle {
   text-align: center;
   margin: 50px 0px;
-  font-size: 100px !important;
-  max-width: 900px;
+  font-size: 70px !important;
+  max-width: 800px;
 }
 .formWrapper {
   display: flex;
   justify-content: center;
-  background-color: white;
-  padding: 200px 0px;
+
+
   border-radius: 20px;
-  background-image: url("/images/contact-bg.png"); /* Path to your image */
-  background-size: contain; /* Adjust as needed: cover, contain, etc. */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-position: center; /* Optional: Position the background image */
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .formWrapper2 {
   padding: 20px;
   border-radius: 20px;
-  background: white;
+  background: #dadada;
 }
 .contactForm {
   width: 500px;
@@ -39,12 +35,12 @@
 .inputField {
   border-radius: 30px !important;
   padding: 10px 20px !important;
-  border: 1px solid grey !important;
+  border: 1px solid rgb(212, 212, 212) !important;
 }
 .textAreaField {
   border-radius: 20px !important;
   padding: 10px 20px !important;
-  border: 1px solid grey !important;
+  border: 1px solid rgb(212, 212, 212) !important;
   min-height: 120px !important;
 }
 .submitButton {
@@ -72,15 +68,15 @@
   color: white !important;
   border-color: transparent !important;
 }
-.arrowBtn{
-    background-color: white;
-    color: #7e54f6;
-    position: absolute;
-    right: 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-justify-content: center;
-align-items: center;
-    border-radius: 50%;
+.arrowBtn {
+  background-color: white;
+  color: #7e54f6;
+  position: absolute;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }

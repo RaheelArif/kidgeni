@@ -7,9 +7,10 @@
 
   .faqTitle {
     font-family: Georgia;
-    font-size: 148px;
+    font-size: 80px;
     text-align: center;
-    margin: 3rem 0rem;
+    max-width: 800px;
+    margin: 2rem 0rem;
     font-family: 400;
   }
 
@@ -24,8 +25,8 @@
     }
     .faqPanel {
       border-bottom: 1px solid lightgray;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      margin-bottom: 0rem;
+      padding-bottom: 0rem;
 
       .number {
         display: inline-flex;
@@ -45,27 +46,29 @@
   }
 }
 .question {
-  font-size: 36px;
+  font-size: 26px;
 }
 .circleNumber {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 99px;
-  height: 99px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  
-  background-color: #EDE7FE;
-  color: #333;
-  margin-right: 30px;
-  font-size: 24px;
-  border: 1px solid black;
-  box-shadow: 5px 5px black;
-}
-.activeCircle{
-  background-color: #b4a7ff !important;
 
+  background-color: #ede7fe;
+  color: #333;
+  margin-right: 20px;
+  font-size: 18px;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
 }
-.answerPanel{
-  margin-left: 140px;
+.activeCircle {
+  background-color: #b4a7ff !important;
+  color: black !important;
+}
+.answerPanel {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: -20px;
 }
