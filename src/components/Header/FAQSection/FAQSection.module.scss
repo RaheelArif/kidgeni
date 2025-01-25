@@ -1,0 +1,70 @@
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  .faqTitle {
+    font-family: Georgia;
+    font-size: 148px;
+    text-align: center;
+    margin: 3rem 0rem;
+    font-family: 400;
+  }
+
+  .faqCollapse {
+    border: none;
+    width: 908px;
+    :global(.ant-collapse-arrow) {
+      background-color: black !important;
+      color: white !important;
+      padding: 5px;
+      border-radius: 50%;
+    }
+    .faqPanel {
+      border-bottom: 1px solid lightgray;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #d8c9ff;
+        color: black;
+      }
+      :global(.ant-collapse-header) {
+        font-weight: normal;
+        align-items: center !important;
+      }
+    }
+  }
+}
+.question {
+  font-size: 36px;
+}
+.circleNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  
+  background-color: #EDE7FE;
+  color: #333;
+  margin-right: 30px;
+  font-size: 24px;
+  border: 1px solid black;
+  box-shadow: 5px 5px black;
+}
+.activeCircle{
+  background-color: #b4a7ff !important;
+
+}
+.answerPanel{
+  margin-left: 140px;
+}

@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+
+  position: relative;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+
+    .logoItalic {
+      color: #b4a7ff;
+    }
+  }
+
+  .menuButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; // Initially hidden
+
+    @media (max-width: 768px) {
+      display: block; // Show on small screens
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      display: none; // Hide navigation on small screens by default
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 1rem;
+    }
+
+    &.navOpen {
+      display: flex;
+    }
+
+    .navLink {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: black;
+
+      @media (max-width: 768px) {
+        margin: 0;
+        padding: 0.8rem;
+        border-bottom: 1px solid lightgray;
+      }
+
+      &:hover {
+        text-decoration: underline;
+
+        @media (max-width: 768px) {
+          text-decoration: none;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    .cartButton {
+      background: transparent;
+      color: #7e54f6;
+      background-color: #e1dcff;
+      border: none;
+      font-size: 1.2rem;
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    .signInButton {
+      background: black;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.3rem;
+      .arrow {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+.customSignInButton {
+  background: black !important;
+  color: white !important;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  &:hover {
+    background: #333 !important; // Slightly lighter than black for a subtle hover effect
+    color: white !important;
+  }
+
+  &:active {
+    background: black !important; // Slightly lighter than black for a subtle hover effect
+    color: white !important;
+  }
+}
+.customArrow {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
