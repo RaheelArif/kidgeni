@@ -1,3 +1,6 @@
-body{
+body {
   font-family: sans-serif;
+}
+.conatiner {
+  padding: 0px 80px;
 }

@@ -19,7 +19,7 @@ const DiscoverSection = () => {
         <Select
           defaultValue="Child's Age: 4-6"
           size="large"
-          bordered={false}
+ 
           className={styles.selectMenu}
           onChange={handleSelectChange}
           options={[
@@ -30,7 +30,7 @@ const DiscoverSection = () => {
         <Select
           defaultValue="English"
           size="large"
-          bordered={false}
+   
           className={styles.selectMenu}
           onChange={handleSelectChange}
           options={[
@@ -41,7 +41,7 @@ const DiscoverSection = () => {
         <Select
           defaultValue="All Function"
           size="large"
-          bordered={false}
+      
           className={styles.selectMenu}
           onChange={handleSelectChange}
           options={[
