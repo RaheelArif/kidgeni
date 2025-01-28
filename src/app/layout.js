@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "antd/dist/reset.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
