@@ -8,6 +8,7 @@ import {
   BookFilled,
 } from "@ant-design/icons";
 import Image from "next/image";
+import { FaRegBookmark } from "react-icons/fa";
 
 const PopularCard = ({ imageUrl, title, likes }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,7 +24,7 @@ const PopularCard = ({ imageUrl, title, likes }) => {
         <div className={styles.overlay}>
           <div className={styles.topIcons}>
             <span className={styles.icon}>
-              <BookOutlined />
+              <FaRegBookmark />
             </span>
             <span className={styles.likeCount}>
               {likes}

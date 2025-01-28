@@ -1,0 +1,108 @@
+.signupFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+}
+
+.signupFormTitle {
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 70px !important;
+    max-width: 800px;
+}
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.formWrapper2 {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    // background: #dadada;
+    background-color: white;
+
+}
+
+.signupForm {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.inputField {
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
+    border: 1px solid rgb(212, 212, 212) !important;
+}
+
+
+.submitButton {
+    border-radius: 20px !important;
+    background-color: #7e54f6 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    border: none;
+    border-color: transparent !important;
+    box-shadow: 4px 4px black !important;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+    background-color: #7e54f6 !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+.submitButton:active {
+    background-color: #5425d8 !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+.arrowBtn {
+    background-color: white;
+    color: #7e54f6;
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.orSignIn {
+  margin-top: 20px;
+//   text-align: center;
+}
+
+.socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+   
+}
+
+.socialButton {
+    border-radius: 20px !important;
+    border: 1px solid gray;
+    width: 50%;
+}
+.loginFC{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px  0px;
+}
