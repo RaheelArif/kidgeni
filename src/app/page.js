@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import FAQSection from "@/components/Faqsection/FAQSection";
+import FAQSection from "@/components/FaqSection/FAQSection";
 import Header from "@/components/Header/Header";
 import React from "react";
 
