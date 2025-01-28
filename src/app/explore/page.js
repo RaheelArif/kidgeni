@@ -1,7 +1,7 @@
-import DiscoverSection from "@/components/explore/DiscoverSection";
-import PopularArtSection from "@/components/explore/PopularArtSection";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import DiscoverSection from "../../components/explore/DiscoverSection";
+import PopularArtSection from "../../components/explore/PopularArtSection";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 import React from "react";
 
 export default function Explore() {
