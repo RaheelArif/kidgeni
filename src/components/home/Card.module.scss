@@ -33,6 +33,7 @@
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .productImage {
@@ -59,6 +60,7 @@
 .productTitle {
   font-size: 1.1rem;
   margin-bottom: 5px;
+  color: black;
 }
 
 .productPrice {
