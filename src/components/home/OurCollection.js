@@ -5,7 +5,7 @@ import catImage from "/public/images/dummyCat.png"; // Replace with the actual c
 import { Row, Col } from "antd";
 import Card from "./Card";
 
-const OurCollection = () => {
+const OurCollection = ({isDetail}) => {
   const products = [
     {
       id: 1,
@@ -67,9 +67,10 @@ const OurCollection = () => {
             Lorem ipsum dolor sit amet consectetur.
           </p>
         </div>
+        {isDetail ? null:
         <button className={styles.viewAllButton}>
           View All <span className={styles.arrowIcon}>→</span>
-        </button>
+        </button>}
       </div>
       <div className={`${styles.productsGrid} container`}>
         <Row gutter={[24, 24]}>

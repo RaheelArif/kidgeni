@@ -9,6 +9,8 @@ import payCart1 from "/public/icons/payCart1.png";
 import payCart2 from "/public/icons/payCart2.png";
 import payCart3 from "/public/icons/payCart3.png";
 import { CiCreditCard1 } from "react-icons/ci";
+import catImage from "/public/images/dummyCat.png";
+import ProductImageGallery from "./ProductImageGallery";
 
 const { Panel } = Collapse;
 
@@ -27,12 +29,17 @@ const ProductDetail = () => {
   const handleIncrement = () => {
     setValue(value + 1);
   };
+  const images = [
+    catImage,
+    catImage,
+    catImage
+]
   return (
     <div className={styles.productDetailContainer}>
       <Row gutter={[24, 24]}>
         <Col xs={24} sm={12} md={12}>
           <div className={styles.productLeft}>
-            {/* Placeholder for the left side content, as requested */}
+          <ProductImageGallery images={images} />
           </div>
         </Col>
         <Col xs={24} sm={12} md={12}>
