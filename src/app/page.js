@@ -1,3 +1,4 @@
+import FAQSectionHome from "@/components/FAQSection/FAQSectionHome";
 import Footer from "@/components/Footer/Footer";
 
 import Header from "@/components/Header/Header";
@@ -21,6 +22,7 @@ export default function page() {
           <PricingCardGrid />
         </div>
       </div>
+      <FAQSectionHome />
       <Footer />
     </div>
   );

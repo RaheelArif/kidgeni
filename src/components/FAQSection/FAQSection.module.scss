@@ -45,6 +45,53 @@
     }
   }
 }
+.faqSection2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 50px 0px;
+
+  .faqTitle {
+    font-family: Georgia;
+    font-size: 40px;
+    // text-align: center;
+
+   
+    font-family: 400;
+  }
+
+  .faqCollapse {
+    border: none;
+
+    :global(.ant-collapse-arrow) {
+      background-color: black !important;
+      color: white !important;
+      padding: 5px;
+      border-radius: 50%;
+    }
+    .faqPanel {
+      border-bottom: 1px solid lightgray;
+      margin-bottom: 0rem;
+      padding-bottom: 0rem;
+
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #d8c9ff;
+        color: black;
+      }
+      :global(.ant-collapse-header) {
+        font-weight: normal;
+        align-items: center !important;
+      }
+    }
+  }
+}
 .question {
   font-size: 26px;
 }
