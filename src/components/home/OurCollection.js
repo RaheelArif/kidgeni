@@ -71,7 +71,7 @@ const OurCollection = () => {
           View All <span className={styles.arrowIcon}>→</span>
         </button>
       </div>
-      <div className={`${styles.productsGrid} conatiner`}>
+      <div className={`${styles.productsGrid} container`}>
         <Row gutter={[24, 24]}>
           {products.map((product) => (
             <Col key={product.id} xs={24} sm={12} md={8} lg={6} xl={6}>

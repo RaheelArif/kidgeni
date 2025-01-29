@@ -110,7 +110,7 @@ const PopularArtSection = () => {
           ))}
         </div>
       </div>
-      <div className="conatiner">
+      <div className="container">
         <Row gutter={[16, 16]}>
         <Col  md={12} lg={6}>
             <PopularCard

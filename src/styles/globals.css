@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
 }
-.conatiner {
+.container {
   padding: 0px 80px;
 }
 .signup-page-bg{
@@ -13,4 +13,9 @@ body {
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center bottom; /* Optional: Position the background image */
 
+}
+.pricing-container{
+  background-color: #B4A7FF;
+  padding: 60px 0px;
+  margin-top: 40px;
 }
