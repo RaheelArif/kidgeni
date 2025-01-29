@@ -9,12 +9,19 @@
   width: 100%;
   position: relative;
   height: 100%;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .iconContainer {
   background-color: #ede7fe;
   border-radius: 50%;
   padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   svg {
     color: #7e54f6;
@@ -66,8 +73,8 @@
   align-self: flex-start;
 }
 .usageItem {
-  margin-bottom: 10px;
-  color: #565656;
+  margin-bottom: 15px;
+//   color: #565656;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -87,7 +94,7 @@
 }
 .description {
   margin-bottom: 15px;
-  color: #565656;
+//   color: #565656;
   font-size: 1rem;
   align-self: flex-start;
 }
@@ -132,4 +139,14 @@
 .UsageT {
   color: rgb(190, 190, 190);
   margin-bottom: 15px;
+}
+
+.selectedCard{
+   background-color: #7e54f6; 
+   color: white;
+   transition: 0.5s;
+   box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1);
+   .iconContainer{
+    background-color: white;
+   }
 }

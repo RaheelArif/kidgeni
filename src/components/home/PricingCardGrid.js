@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Row, Col } from "antd";
 import PricingCard from "./PricingCard";
 import { AiFillBulb } from "react-icons/ai";
@@ -7,6 +9,11 @@ import { MdElectricBolt } from "react-icons/md";
 import { PiRocketLaunchFill } from "react-icons/pi";
 
 const PricingCardGrid = () => {
+  const [selectedCardIndex, setSelectedCardIndex] = useState(0); // State for selected card
+  const handleCardClick = (index) => {
+    setSelectedCardIndex(index);
+  };
+
   const cards = [
     {
       planType: "Starter Plan",
@@ -53,7 +60,8 @@ const PricingCardGrid = () => {
         "Up to 100+ 3D models or extensive use of other features",
         "30% discount on token top-ups",
         "25% discount on all products, plus free shipping for orders",
-        "Collaborative perks (multiple user profile)"      ],
+        "Collaborative perks (multiple user profile)",
+      ],
       description: "For casual creators exploring different features.",
     },
   ];
@@ -62,7 +70,11 @@ const PricingCardGrid = () => {
     <Row gutter={[24, 24]}>
       {cards.map((card, index) => (
         <Col key={index} xs={24} sm={12} md={8} lg={6} xl={6}>
-          <PricingCard {...card} />
+          <PricingCard
+            {...card}
+            isSelected={selectedCardIndex === index}
+            onClick={() => handleCardClick(index)}
+          />
         </Col>
       ))}
     </Row>

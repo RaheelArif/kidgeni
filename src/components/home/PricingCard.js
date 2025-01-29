@@ -1,14 +1,25 @@
 import React from "react";
 import styles from "./PricingCard.module.scss";
-
 import { TiTick } from "react-icons/ti";
-const PricingCard = ({ planType, price, usage, description, icon }) => {
+
+const PricingCard = ({
+  planType,
+  price,
+  usage,
+  description,
+  icon,
+  isSelected,
+  onClick,
+}) => {
   return (
-    <div className={styles.card}>
+    <div
+      className={`${styles.card} ${isSelected ? styles.selectedCard : ""}`}
+      onClick={onClick}
+    >
       <div className={styles.cardC1}>
         <div className={styles.cardContainer1}>
           <div className={styles.iconContainer}>{icon}</div>
-          <h4 className={styles.planType}>{planType}</h4>{" "}
+          <h4 className={styles.planType}>{planType}</h4>
         </div>
         <div className={styles.priceDetails}>
           <h2 className={styles.price}>{price}</h2>
@@ -22,18 +33,16 @@ const PricingCard = ({ planType, price, usage, description, icon }) => {
             <div key={index} className={styles.usageItem}>
               <span className={styles.checkMark}>
                 <TiTick />
-              </span>{" "}
+              </span>
               {item}
             </div>
           ))}
         </div>
         <div className={styles.description}>{description}</div>
-      </div>{" "}
-
-        <button className={styles.getStartedButton}>
-          Get Started <span className={styles.arrowIcon}>→</span>
-        </button>
- 
+      </div>
+      <button className={styles.getStartedButton}>
+        Get Started <span className={styles.arrowIcon}>→</span>
+      </button>
     </div>
   );
 };
