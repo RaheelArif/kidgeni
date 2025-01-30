@@ -1,14 +1,25 @@
-"use client"; // <-- Add this line at the top
+"use client";
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { PiArrowRight, PiBasket } from "react-icons/pi";
 import { Button } from "antd";
+import CartDrawer from "./CartDrawer"; // Import the CartDrawer component
+import BlackButton from "../ui/BlackButton";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const openCartDrawer = () => {
+    setIsCartDrawerOpen(true);
+  };
+
+  const closeCartDrawer = () => {
+    setIsCartDrawerOpen(false);
   };
 
   return (
@@ -50,21 +61,23 @@ const Header = () => {
         </a>
       </nav>
       <div className={styles.actions}>
-        <button className={styles.cartButton}>
+        <button className={styles.cartButton} onClick={openCartDrawer}>
           <PiBasket />
         </button>
-        <Button
-          shape="round"
-          size="large"
-    
-          className={styles.customSignInButton}
-        >
-          Sign up
-          <div className={styles.customArrow}>
-            <PiArrowRight />
-          </div>
-        </Button>
+        <BlackButton 
+        text="Sign Up" 
+        icon={<PiArrowRight />} 
+        size="large" 
+        shape="round" 
+        // onClick={handleButtonClick} 
+        className="additional-class" 
+        iconStyle={{ color: 'white', marginLeft: '5px' }} // Custom icon styles
+        buttonStyle={{ backgroundColor: 'blue' }} // Custom button styles
+      />
+      <CartDrawer visible={isCartDrawerOpen} onClose={closeCartDrawer} />
       </div>
+
+      {/* Use the CartDrawer component */}
     </header>
   );
 };

@@ -1,0 +1,33 @@
+// src/components/CartDrawer.module.scss
+.drawerHeader {
+    display: flex;
+    justify-content: space-between; // Space between title and close icon
+    align-items: center; // Center vertically
+    // padding: 20px; // Add padding for the header
+    margin-bottom: 20px;
+  }
+  
+  .customCloseIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: black;
+    transition: background-color 0.3s ease;
+    
+    svg {
+      font-size: 1.5rem;
+    }
+  
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  
+    &:active {
+      background-color: #d0d0d0;
+    }
+  }
+ 

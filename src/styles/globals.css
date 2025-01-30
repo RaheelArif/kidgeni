@@ -19,3 +19,10 @@ body {
   padding: 60px 0px;
   margin-top: 40px;
 }
+.ant-drawer .ant-drawer-content-wrapper{
+margin: 10px ;
+}
+.ant-drawer .ant-drawer-content{
+  border-radius: 20px !important;
+
+}
