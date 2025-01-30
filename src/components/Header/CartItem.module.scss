@@ -1,0 +1,112 @@
+// src/components/CartItem.module.scss
+.cartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #EDE7FE;
+    
+    border-radius: 20px;
+  
+    .itemImage {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  
+    .itemDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+  
+      .itemTitle {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+  
+      .itemPrice {
+        font-size: 1rem;
+  
+      }
+  
+      .itemQuantity {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+  }
+
+  .quantitySelector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #111;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 130px;
+    margin-right: 10px;
+    padding: 3px;
+    margin-top: 9px;
+}
+
+.quantityButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(126, 84, 246, 0.2);
+    transition: background-color 0.2s;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: rgba(103, 67, 200, 0.2);
+      .minus,
+      .plus {
+        color: #7e54f6;
+      }
+    }
+
+    &:active {
+      background-color: rgba(126, 84, 246, 0.4);
+    }
+}
+
+.quantityValue {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    user-select: none;
+    min-width: 15px;
+    text-align: center;
+}
+.minus,
+.plus {
+    font-size: 1.4rem;
+    color: black;
+}
+.deleeIcon{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 20px;
+    &:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
