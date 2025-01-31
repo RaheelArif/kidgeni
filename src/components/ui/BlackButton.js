@@ -12,20 +12,21 @@ const BlackButton = ({
   onClick, 
   className = "", 
   variant = "default", // Add variant prop for different styles
+  isBlack
 }) => {
   return (
     <Button
       shape={shape}
       size={size}
       className={`
-        ${styles.customSignInButton} 
+        ${isBlack ?styles.blackButton :styles.purpleButton } 
         ${styles[`button-${variant}`]} 
         ${className}
       `}
       onClick={onClick}
     >
       {text}
-      <div className={styles.customArrow}>
+      <div className={`${isBlack ?styles.customArrow :styles.arrowBtn } ` }>
         {icon}
       </div>
     </Button>

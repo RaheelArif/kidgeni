@@ -65,6 +65,7 @@ const Header = () => {
           <PiBasket />
         </button>
         <BlackButton 
+        isBlack={true}
         text="Sign Up" 
         icon={<PiArrowRight />} 
         size="large" 

@@ -1,5 +1,5 @@
 // ui.module.scss
-.customSignInButton {
+.blackButton {
     background: black !important;
     color: white !important;
     border: none;
@@ -26,7 +26,8 @@
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    margin-right: -10px;
+    margin-right: -14px;
+    font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,3 +82,45 @@
       background: #e0e0e0 !important;
     }
   }
+
+
+
+  .purpleButton {
+    border-radius: 20px !important;
+    background-color: #7e54f6 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+    color: white !important;
+    position: relative;
+    border: none;
+    border-color: transparent !important;
+    box-shadow: 4px 4px black !important;
+    .arrowBtn {
+      background-color: white;
+      color: #7e54f6;
+      position: absolute;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+  }
+}
+
+.purpleButton:hover,
+.purpleButton:focus {
+    background-color: #7e54f6 !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+.purpleButton:active {
+   
+    box-shadow: none !important;
+}
+
