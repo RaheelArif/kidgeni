@@ -3,7 +3,12 @@ import React, { useState, useRef } from "react";
 import { Typography } from "antd";
 import styles from "./HeroSection.module.scss";
 import Image from "next/image";
-import ArtImage from "/public/images/Art.png";
+import ArtImage from "/public/images/art.png";
+import booksImage from "/public/images/books.png";
+import doodlesImage from "/public/images/doodles.png";
+import LearrnToImage from "/public/images/learn-to-draw.png";
+import modelingImage from "/public/images/modeling.png";
+import storiesImage from "/public/images/stories.png";
 
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -19,7 +24,7 @@ const HeroSection = () => {
   const filters = [
     {
       label: "3D modeling",
-      image: ArtImage,
+      image: modelingImage,
       value: "3D modeling",
       color: "#B4A7FF",
     },
@@ -31,25 +36,25 @@ const HeroSection = () => {
     },
     {
       label: "Stories",
-      image: ArtImage,
+      image: storiesImage,
       value: "Stories",
       color: "#FFBBF8",
     },
     {
       label: "Books",
-      image: ArtImage,
+      image: booksImage,
       value: "Books",
       color: "#C8E3FE",
     },
     {
       label: "Doodles",
-      image: ArtImage,
+      image: doodlesImage,
       value: "Doodles",
       color: "#DACFFD",
     },
     {
       label: "Learn-to-Draw",
-      image: ArtImage,
+      image: LearrnToImage,
       value: "Learn-to-Draw",
       color: "#B4A7FF",
     },
