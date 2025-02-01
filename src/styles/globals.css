@@ -47,3 +47,6 @@ body {
 .my-slider .ant-menu{
   background-color: transparent !important;
 }
+.ant-input-outlined{
+border-color: gray !important;
+}
