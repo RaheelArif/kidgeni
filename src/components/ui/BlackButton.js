@@ -12,7 +12,8 @@ const BlackButton = ({
   onClick, 
   className = "", 
   variant = "default", // Add variant prop for different styles
-  isBlack
+  isBlack,
+  paddingRight
 }) => {
   return (
     <Button
@@ -24,6 +25,7 @@ const BlackButton = ({
         ${className}
       `}
       onClick={onClick}
+      style={{paddingRight:paddingRight? paddingRight:  "20px"}}
     >
       {text}
       <div className={`${isBlack ?styles.customArrow :styles.arrowBtn } ` }>

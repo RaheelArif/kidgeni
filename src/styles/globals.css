@@ -4,7 +4,7 @@ body {
 .container {
   padding: 0px 80px;
 }
-.signup-page-bg{
+.signup-page-bg {
   height: 100vh;
   width: 100%;
   padding-top: 100px;
@@ -12,20 +12,38 @@ body {
   background-size: contain; /* Adjust as needed: cover, contain, etc. */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center bottom; /* Optional: Position the background image */
-
 }
-.pricing-container{
-  background-color: #B4A7FF;
+.pricing-container {
+  background-color: #b4a7ff;
   padding: 60px 0px;
   margin-top: 40px;
 }
-.ant-drawer .ant-drawer-content-wrapper{
-margin: 10px ;
+.ant-drawer .ant-drawer-content-wrapper {
+  margin: 10px;
 }
-.ant-drawer .ant-drawer-content{
+.ant-drawer .ant-drawer-content {
   border-radius: 20px !important;
-
 }
-.light-bg{
+.light-bg {
   background-color: #f2f2f2;
+}
+.my-slider .ant-menu-item {
+  background-color: transparent;
+  /* margin-bottom: 10px !important; */
+  height: 70px !important;
+  margin-right: 0px !important;
+  border-bottom: 1px solid black;
+  border-radius: 0px !important;
+}
+.my-slider .ant-menu-item.ant-menu-item-selected {
+  border-color: #7e54f6;
+}
+.my-slider {
+  background-color: #f2f2f2;
+  height: 100vh;
+  padding: 20px !important;
+}
+
+.my-slider .ant-menu{
+  background-color: transparent !important;
 }

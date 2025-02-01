@@ -1,0 +1,48 @@
+.appLayout {
+  .menu {
+    background-color: #f0f2f5;
+    .ant-menu-item-selected {
+      background-color: #e6f7ff;
+      &::after {
+        border-right: 3px solid #1890ff;
+      }
+    }
+  }
+  .ant-layout-sider {
+    border-right: 1px solid #f0f0f0;
+  }
+}
+
+.menuIcon {
+  padding: 10px;
+  background-color: #b4a7ff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.activeIcon {
+  background-color: #7e54f6;
+  color: white !important;
+}
+
+.menuItem {
+  display: inline-block;
+  padding: 8px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  &:hover {
+    background-color: rgba(230, 247, 255, 0.7);
+  }
+}
+.active {
+  font-weight: bold;
+  color: black;
+}
+.contentArea{
+    background-color: white !important;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    overflow-y: auto;
+}

@@ -1,0 +1,83 @@
+.profileTitle {
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.profileImageContainer {
+  position: relative;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: contain;
+  background-color: rgb(232, 255, 174);
+}
+
+.editIcon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  padding:0px 20px;
+  width: 100%;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+}
+.inputField {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px !important;
+  padding: 8px 15px;
+  margin-top: 5px  !important;
+  margin-bottom: 10px !important;
+  &:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.saveButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.saveButton {
+  background-color: #9370db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
