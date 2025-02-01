@@ -6,7 +6,7 @@ import { MdDeleteOutline } from "react-icons/md";
 const CartItem = ({ item, bgFalse , borderBottom }) => {
   return (
     <div
-      style={{ background: bgFalse ? "transparent" : "#EDE7FE" , borderBottom : borderBottom ? "1px solid black" : "20px" , borderRadius:borderBottom ?  "0px" : "10px" }}
+      style={{ background: bgFalse ? "transparent" : "#EDE7FE" , borderBottom : borderBottom ? "1px solid black" : "none" , borderRadius:borderBottom ?  "0px" : "10px" }}
       className={styles.cartItem}
     >
       <Image src={item.image} alt={item.title} className={styles.itemImage} />
