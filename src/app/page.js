@@ -12,6 +12,7 @@ export default function page() {
   return (
     <div>
       <Header />
+ 
       <HeroSection />
 
       <OurCollection />

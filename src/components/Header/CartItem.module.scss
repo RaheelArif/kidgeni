@@ -4,7 +4,6 @@
     align-items: center;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #EDE7FE;
     
     border-radius: 20px;
   
@@ -50,7 +49,7 @@
     width: 130px;
     margin-right: 10px;
     padding: 3px;
-    margin-top: 9px;
+    // margin-top: 9px;
     background-color: white;
 }
 
@@ -112,5 +111,8 @@
         cursor: pointer;
     }
 }
-
+.quantityContaner{
+  display: flex;
+  align-content: flex-end;
+}
 
