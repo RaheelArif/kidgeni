@@ -5,7 +5,7 @@ import styles from "./HeroSection.module.scss";
 import Image from "next/image";
 import ArtImage from "/public/images/art.png";
 import booksImage from "/public/images/books.png";
-import doodlesImage from "/public/images/doodles.png";
+import doodlesImage from "/public/images/doodles.png"; 
 import LearrnToImage from "/public/images/learn-to-draw.png";
 import modelingImage from "/public/images/modeling.png";
 import storiesImage from "/public/images/stories.png";
