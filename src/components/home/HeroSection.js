@@ -118,7 +118,7 @@ const HeroSection = () => {
     <div className={styles.popularArtSectionContainer}>
       <div className={styles.titlesWrapper}>
         <Title level={2} className={styles.mainTitle}>
-          Lorem Ipsum Dolor Sit Amet
+          Lorem Ipsum <span>Dolor Sit Amet</span>
         </Title>
       </div>
       <div className={styles.carouselWrapper}>
