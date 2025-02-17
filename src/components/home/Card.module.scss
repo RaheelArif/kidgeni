@@ -1,11 +1,13 @@
 .productCard {
   background-color: #c8e3fe;
-  border-radius: 12px;
+  border-radius: 30px;
   padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: relative; /* Required for the hover effect */
   overflow: hidden; /* Ensure the gradient doesn't overflow */
   transition: background-color 0.3s ease; /* Smooth background color transition */
+  border: 1px solid transparent;
+
 }
 
 .productCard::before {
@@ -15,14 +17,29 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, #a0d6ff, #c8e3fe);
+  // background: linear-gradient(to top, #a0d6ff, #c8e3fe);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1; /* Place the gradient behind the content */
 }
+.productCard::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100%; /* Start hidden */
+  width: 100%;
+  border-radius: 50%;
+  height: 100%; /* Half the height of the card */
+  background: #B4A7FF; /* Gradient effect */
+  transition: bottom 0.4s ease-in-out;
+}
 
+/* When hovering, move the gradient up */
+.productCard:hover::after {
+  bottom: -50%; /* Moves up to half height */
+}
 .productCard:hover {
-  background-color: #a0d6ff; /* Set a solid hover background before animation*/
+  border: 1px solid black;
 }
 
 .productCard:hover::before {
@@ -32,13 +49,14 @@
 .imageContainer {
   position: relative;
   border-radius: 12px;
+  z-index: 10;
   overflow: hidden;
   cursor: pointer;
 }
 
 .productImage {
   width: 100%;
-  height: 200px;
+  height: 300px;
 
   object-fit: contain;
 }
@@ -58,18 +76,24 @@
 }
 
 .productTitle {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+
   color: black;
 }
 
 .productPrice {
-  font-size: 1rem;
-  margin-top: 5px;
+  font-size: 22px;
+  margin-top: 10px;
   color: black;
-  margin-bottom: 0px;
+  display: inline-block ;
+  transform: skewX(-5deg) ;
+  margin-bottom: 10px;
 }
 .productCat {
   color: gray;
+  margin-top: 20px;
+
   margin-bottom: 5px;
 }

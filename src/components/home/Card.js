@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Card.module.scss";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Card({ product }) {
   return (
@@ -15,11 +15,11 @@ export default function Card({ product }) {
             className={styles.productImage}
           />
         </div>
-        <div className={styles.productDetails}>
-          <p className={styles.productCat}>Lorem Ipsum</p>
-          <p className={styles.productTitle}>{product.title}</p>
-          <p className={styles.productPrice}>{product.price}</p>
-        </div>
+      </div>
+      <div className={styles.productDetails}>
+        <p className={styles.productCat}>Lorem Ipsum</p>
+        <p className={styles.productTitle}>{product.title}</p>
+        <p className={styles.productPrice}>{product.price}</p>
       </div>
     </Link>
   );

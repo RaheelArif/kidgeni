@@ -14,8 +14,12 @@ body {
   background-position: center bottom; /* Optional: Position the background image */
 }
 .pricing-container {
-  background-color: #b4a7ff;
-  padding: 60px 0px;
+  background-image: url("/backgournds/plans-bg.png"); /* Path to your image */
+  background-size: contain; /* Adjust as needed: cover, contain, etc. */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center bottom; /* Optional: Position the background image */
+
+  padding: 220px 0px;
   margin-top: 40px;
 }
 .ant-drawer .ant-drawer-content-wrapper {
