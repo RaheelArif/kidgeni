@@ -45,10 +45,10 @@ const FAQSectionHome = ({}) => {
     <div className={styles.faqSection2}>
       <Row>
         <Col md={24} lg={12}>
-          <Title level={2} className={styles.faqTitle}>
+          <Title level={2} className={styles.faqTitle2}>
             FAQ
           </Title>
-          <p>Lorem ipsum dolor sit amet consectetur. </p>
+          <p className={styles.faqTitleText}>Lorem ipsum dolor sit amet consectetur. </p>
         </Col>
         <Col md={24} lg={12}>
           <Collapse

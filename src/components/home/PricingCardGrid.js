@@ -7,7 +7,7 @@ import { AiFillBulb } from "react-icons/ai";
 import { FaHandSparkles } from "react-icons/fa";
 import { MdElectricBolt } from "react-icons/md";
 import { PiRocketLaunchFill } from "react-icons/pi";
-
+import { FaLightbulb } from "react-icons/fa";
 const PricingCardGrid = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(0); // State for selected card
   const handleCardClick = (index) => {
@@ -18,7 +18,7 @@ const PricingCardGrid = () => {
     {
       planType: "Starter Plan",
       price: "Free",
-      icon: <AiFillBulb />,
+      icon: <FaLightbulb />,
       usage: [
         "3D Models: 10 tokens/model",
         "1 token per use (Art, Stories, Doodles, Coloring Pages, etc.)",
@@ -32,9 +32,12 @@ const PricingCardGrid = () => {
       usage: [
         "Flexible usage across all features",
         "Up to 20 3D models (10 tokens/model) or mixed use of other features",
+      ],
+      usage2: [
         "10% discount on token top-ups",
-      "10% discount on product orders (3D model or bazzle and more )",
-    ],
+        "10% discount on product orders (3D model or bazzle and more )",
+      ],
+      bonus: true,
       description: "For casual creators exploring different features.",
     },
     {
@@ -45,9 +48,13 @@ const PricingCardGrid = () => {
       usage: [
         "Flexible usage across all features",
         "Up to 40–50 3D models or broader use of other features",
+      ],
+      usage2: [
         "20% discount on token top-ups",
         "20% discount on all products, plus free shipping for orders",
-    ],
+      ],
+      bonus: true,
+
       description: "For casual creators exploring different features.",
     },
     {
@@ -58,10 +65,15 @@ const PricingCardGrid = () => {
       usage: [
         "Flexible usage across all features",
         "Up to 100+ 3D models or extensive use of other features",
+   
+      ],
+      usage2: [
         "30% discount on token top-ups",
         "25% discount on all products, plus free shipping for orders",
         "Collaborative perks (multiple user profile)",
       ],
+      bonus: true,
+
       description: "For casual creators exploring different features.",
     },
   ];

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./PricingCard.module.scss";
-import { TiTick } from "react-icons/ti";
-
+import { IoIosCheckmark } from "react-icons/io";
 const PricingCard = ({
   planType,
   price,
@@ -10,12 +9,11 @@ const PricingCard = ({
   icon,
   isSelected,
   onClick,
+  usage2,
+  bonus,
 }) => {
   return (
-    <div
-      className={`${styles.card} ${isSelected ? styles.selectedCard : ""}`}
-      onClick={onClick}
-    >
+    <div className={`${styles.card} `} onClick={onClick}>
       <div className={styles.cardC1}>
         <div className={styles.cardContainer1}>
           <div className={styles.iconContainer}>{icon}</div>
@@ -32,11 +30,25 @@ const PricingCard = ({
           {usage.map((item, index) => (
             <div key={index} className={styles.usageItem}>
               <span className={styles.checkMark}>
-                <TiTick />
+                <IoIosCheckmark />
               </span>
               {item}
             </div>
           ))}
+          {bonus ? (
+            <div className={styles.bonusText}>
+              <span>Bonus</span>
+            </div>
+          ) : null}
+          {usage2 &&
+            usage2.map((item, index) => (
+              <div key={index} className={styles.usageItem}>
+                <span className={styles.checkMark}>
+                  <IoIosCheckmark />
+                </span>
+                {item}
+              </div>
+            ))}
         </div>
         <div className={styles.description}>{description}</div>
       </div>

@@ -34,16 +34,19 @@
   width: 100%;
 }
 .planType {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 300;
   margin-bottom: 15px;
   align-self: flex-start;
 }
 .price {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 500;
   margin-bottom: 5px;
   align-self: flex-start;
+  font-family: var(--font-lora), serif !important;
+  display: inline-block; /* Needed for transform */
+  transform: skewX(-5deg); /* Skews text by 20 degrees */
 }
 .priceDetails {
   display: flex;
@@ -55,7 +58,7 @@
 }
 .month {
   background-color: #e7fc93;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 30px;
   font-size: 1rem;
   margin-left: 20px;
@@ -63,7 +66,7 @@
   margin-top: 5px;
 }
 .line {
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #626262;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 10px;
@@ -74,28 +77,29 @@
 }
 .usageItem {
   margin-bottom: 15px;
-//   color: #565656;
-  font-size: 1rem;
+  //   color: #565656;
+  font-size: 14px;
   display: flex;
   align-items: center;
 }
-.checkMark {
-  color: #7e54f6;
+.checkMark svg {
+  color: #262626;
   background-color: #ede7fe;
   margin-right: 15px;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 23px !important;
+  height: 23px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 7px;
 }
 .description {
   margin-bottom: 15px;
-//   color: #565656;
-  font-size: 1rem;
+  //   color: #565656;
+  max-width: 200px;
+  font-size: 15px;
   align-self: flex-start;
 }
 .getStartedButton {
@@ -138,15 +142,28 @@
 }
 .UsageT {
   color: rgb(190, 190, 190);
-  margin-bottom: 15px;
+  font-size: 14px;
+  margin: 20px 0px 20px 0px;
 }
 
-.selectedCard{
-   background-color: #7e54f6; 
-   color: white;
-   transition: 0.5s;
-   box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1);
-   .iconContainer{
+.selectedCard {
+  background-color: #7e54f6;
+  color: white;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1);
+  .iconContainer {
     background-color: white;
-   }
+  }
+}
+.bonusText {
+  span{
+
+    background-color: #b4a7ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    display: inline;
+    font-size: 14px;
+  }
+  margin: 30px 0px 20px 0px !important;
 }
