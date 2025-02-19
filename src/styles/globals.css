@@ -58,10 +58,19 @@ body {
   padding: 20px !important;
 }
 
-.my-slider .ant-menu{
+.my-slider .ant-menu {
   background-color: transparent !important;
 }
-.ant-input-outlined{
-border-color: gray !important;
+.ant-input-outlined {
+  border-color: gray !important;
 }
+.contact-form-p {
+  width: 100%;
 
+  padding: 100px 0px;
+  margin: 100px 0px;
+  background-image: url("/backgournds/contact-us-bg.png"); /* Path to your image */
+  background-size: cover; /* Adjust as needed: cover, contain, etc. */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center;
+}
