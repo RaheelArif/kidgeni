@@ -53,54 +53,51 @@ const App = ({ children }) => {
   };
 
   return (
-
-      <Layout className="my-slider">
-        <Sider
-          width={300}
+    <Layout className="my-slider">
+      <Sider
+        width={300}
+        style={{
+          background: "transparent",
+        }}
+      >
+        <h1 className={styles.logoTitle}>
+          Lorem <span>Ipsum</span>
+        </h1>
+        <Menu
+          mode="inline"
+          selectedKeys={[pathname]}
           style={{
-            background: "transparent",
+            height: "100%",
+            borderRight: 0,
           }}
-          
-        >
-          <Menu
-            mode="inline"
-            selectedKeys={[pathname]}
-            style={{
-              height: "100%",
-              borderRight: 0,
-            }}
-            items={menuItems.map((item) => ({
-              key: item.key,
-              icon: (
-                <span
-                  className={`${styles.menuIcon} ${
-                    pathname === item.key ? styles.activeIcon : ""
-                  }`}
-                >
-                  {item.icon}
-                </span>
-              ),
-              label: (
-                <span
-                  className={`${styles.menuItem} ${
-                    pathname === item.key ? styles.active : ""
-                  }`}
-                >
-                  {item.label}
-                </span>
-              ),
-            }))}
-            onClick={handleMenuClick}
-            className={styles.menu}
-          />
-        </Sider>
-        <Layout
-         className={styles.contentArea}
-        >
-          {children}
-        </Layout>
-      </Layout>
- 
+          items={menuItems.map((item) => ({
+            key: item.key,
+            icon: (
+              <span
+                className={`${styles.menuIcon} ${
+                  pathname === item.key ? styles.activeIcon : ""
+                }`}
+              >
+                {item.icon}
+              </span>
+            ),
+            label: (
+              <div
+                className={`${styles.menuItem} ${
+                  pathname === item.key ? styles.active : ""
+                }`}
+              >
+                {item.label}
+                <span></span>
+              </div>
+            ),
+          }))}
+          onClick={handleMenuClick}
+          className={styles.menu}
+        />
+      </Sider>
+      <Layout className={styles.contentArea}>{children}</Layout>
+    </Layout>
   );
 };
 

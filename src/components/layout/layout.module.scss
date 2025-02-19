@@ -18,6 +18,7 @@
   background-color: #b4a7ff;
   border-radius: 50%;
   margin-right: 10px;
+  color: white !important;
 }
 .activeIcon {
   background-color: #7e54f6;
@@ -25,7 +26,9 @@
 }
 
 .menuItem {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px 0;
   width: 100%;
   transition: background-color 0.3s ease;
@@ -34,15 +37,33 @@
   &:hover {
     background-color: rgba(230, 247, 255, 0.7);
   }
+  span {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: transparent;
+  }
 }
 .active {
-  font-weight: bold;
-  color: #5f33d7;
+  // font-weight: bold;
+  transition: 0.5s;
+  color: black;
+  span {
+    background-color: #7e54f6;
+  }
 }
-.contentArea{
-    background-color: white !important;
-    padding: 20px;
-    border-radius: 20px;
-    margin-left: 20px;
-    overflow-y: auto;
+.contentArea {
+  background-color: white !important;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  overflow-y: auto;
+}
+.logoTitle {
+  font-size: 45px;
+  span {
+    font-family: var(--font-lora) !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-3deg); /* Skews text by 20 degrees */
+    color: #b4a7ff;
+  }
 }
