@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <div>
       <Header />
-      <div className="signup-page-bg">
+      <div className="login-page-bg">
         <LoginForm />
       </div>
     </div>

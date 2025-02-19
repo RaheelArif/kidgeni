@@ -9,9 +9,15 @@
     font-family: Georgia;
     font-size: 80px;
     text-align: center;
+    
     max-width: 800px;
     margin: 2rem 0rem;
-    font-family: 400;
+    font-weight: 400;
+    font-family: var(--font-lora) !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-5deg); /* Skews text by 20 degrees */
+
+
   }
 
   .faqCollapse {

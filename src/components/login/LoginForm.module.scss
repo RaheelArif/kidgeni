@@ -104,5 +104,9 @@
 .loginFC{
     display: flex;
     justify-content: space-between;
-    margin: 10px  0px;
+    margin: 15px  0px;
+    a {
+        text-decoration: none;
+        color: #7e54f6;
+      }
 }

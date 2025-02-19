@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div>
       <Header />
-      <div className="signup-page-bg">
+      <div className="login-page-bg">
         <SignupForm />
       </div>
     </div>

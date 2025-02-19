@@ -5,6 +5,9 @@ import styles from "./LoginForm.module.scss";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { GoogleOutlined, AppleOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import Image from "next/image";
+import appleImg from "/public/icons/ri_apple-fill.png";
+import googleImg from "/public/icons/flat-color-icons_google.png";
 
 const { Title } = Typography;
 
@@ -61,7 +64,7 @@ const LoginForm = () => {
               valuePropName="checked"
               style={{ marginBottom: "0px" }}
             >
-              <div   className={styles.loginFC}>
+              <div className={styles.loginFC}>
                 <Checkbox>
                   <Typography.Text>Lorem ipsum</Typography.Text>
                 </Checkbox>
@@ -88,14 +91,14 @@ const LoginForm = () => {
             <div className={styles.socialButtons}>
               <Button
                 size="large"
-                icon={<GoogleOutlined />}
+                icon={<Image src={googleImg} alt="" />}
                 className={styles.socialButton}
-              >
+                >
                 Google
               </Button>
               <Button
                 size="large"
-                icon={<AppleOutlined />}
+                icon={<Image src={appleImg} alt="" />}
                 className={styles.socialButton}
               >
                 Apple

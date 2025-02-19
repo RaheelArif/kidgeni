@@ -4,6 +4,9 @@ import { Form, Input, Button, Typography, Checkbox } from "antd";
 import styles from "./SignupForm.module.scss";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { GoogleOutlined, AppleOutlined } from "@ant-design/icons";
+import Image from "next/image";
+import appleImg from "/public/icons/ri_apple-fill.png";
+import googleImg from "/public/icons/flat-color-icons_google.png";
 
 const { Title } = Typography;
 
@@ -84,16 +87,16 @@ const SignupForm = () => {
           <div className={styles.orSignIn}>
             Or Sign In with
             <div className={styles.socialButtons}>
-              <Button
+            <Button
                 size="large"
-                icon={<GoogleOutlined />}
+                icon={<Image src={googleImg} alt="" />}
                 className={styles.socialButton}
-              >
+                >
                 Google
               </Button>
               <Button
                 size="large"
-                icon={<AppleOutlined />}
+                icon={<Image src={appleImg} alt="" />}
                 className={styles.socialButton}
               >
                 Apple

@@ -21,7 +21,7 @@ const ForgetForm = () => {
     <div className={styles.signupFormContainer}>
       <div className={styles.formWrapper}>
         <div className={styles.formWrapper2}>
-          <h2 style={{ marginBottom: "10px" }}>Forgot Password</h2>
+          <h2 style={{ marginBottom: "10px" }}>Forgot <span>Password</span></h2>
           <p style={{marginBottom:"30px"}}>Lorem ipsum dolor sit amet consectetur. </p>
           <Form
             name="signup_form"

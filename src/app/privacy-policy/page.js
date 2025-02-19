@@ -1,5 +1,5 @@
+import PrivacyPolicy from "@/components/Faq/PrivacyPolicy";
 import Footer from "@/components/Footer/Footer";
-import FAQSection from "@/components/FAQSection/FAQSection";
 import Header from "@/components/Header/Header";
 import React from "react";
 
@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div>
       <Header />
-      <FAQSection />
+      <PrivacyPolicy />
       <Footer />
     </div>
   );
