@@ -11,6 +11,7 @@ import payCart3 from "/public/icons/payCart3.png";
 import { CiCreditCard1 } from "react-icons/ci";
 import catImage from "/public/images/dummyCat.png";
 import ProductImageGallery from "./ProductImageGallery";
+import { TiArrowForwardOutline } from "react-icons/ti";
 
 const { Panel } = Collapse;
 
@@ -45,7 +46,7 @@ const ProductDetail = () => {
         <Col xs={24} sm={12} md={12}>
           <div className={styles.productRight}>
             <div className={styles.shareTC}>
-              <span>Lorem Ipsum</span> <FaShare className={styles.shareIcon} />
+              <span>Lorem Ipsum</span> <TiArrowForwardOutline className={styles.shareIcon} />
             </div>
             <h2 className={styles.productTitle}>Lorem Ipsum Dolor sit Amet</h2>
             <div className={styles.priceAndStock}>

@@ -1,67 +1,68 @@
 .collectionContainer {
-    padding: 30px;
-    margin-top: 50px;
+  padding: 30px;
+  margin-top: 50px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .titles {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .title {
-    font-size: 50px;
-    margin-bottom: 5px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  span {
+    font-family: var(--font-lora), serif !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-5deg); /* Skews text by 20 degrees */
+  }
 }
 
 .subtitle {
- 
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .viewAllButton {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
 
-    &:hover {
-        background-color: darken(#1a1a1a, 10%);
-    }
+  &:hover {
+    background-color: darken(#1a1a1a, 10%);
+  }
 }
 
 .arrowIcon {
-    margin-left: 5px;
-    font-size: 1em;
-    display: inline-block;
-
+  margin-left: 5px;
+  font-size: 1em;
+  display: inline-block;
 }
 .productsGrid {
-  
 }
 
 .productCard {
-  background-color: #C8E3FE;
+  background-color: #c8e3fe;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
- 
 }
 
 .imageContainer {
   position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .productImage {
@@ -71,16 +72,15 @@
   object-fit: contain;
 }
 .inStock {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #E7FC93;
-    padding: 5px 10px;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    color: #111;
-    z-index: 1;
-
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e7fc93;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #111;
+  z-index: 1;
 }
 .productDetails {
   margin-top: 10px;
@@ -97,7 +97,7 @@
   color: black;
   margin-bottom: 0px;
 }
-.productCat{
-    color: gray;
-    margin-bottom: 5px;
+.productCat {
+  color: gray;
+  margin-bottom: 5px;
 }

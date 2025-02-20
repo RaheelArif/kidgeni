@@ -70,7 +70,7 @@ const OurCollection = ({ isDetail }) => {
     <div className={styles.collectionContainer}>
       <div className={styles.header}>
         <div className={styles.titles}>
-          <h2 className={styles.title}>Our Collection</h2>
+          <h2 className={styles.title}>Our <span>Collection</span></h2>
           <p className={styles.subtitle}>
             Lorem ipsum dolor sit amet consectetur.
           </p>
