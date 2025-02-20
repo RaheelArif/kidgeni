@@ -4,7 +4,7 @@ import { PiArrowRight } from "react-icons/pi";
 import BlackButton from "../ui/BlackButton";
 import dummyCat from "/public/images/dummyCat.png";
 import CartItem from "../Header/CartItem";
-
+import { BsPatchCheck } from "react-icons/bs";
 export default function OrderConfirmation() {
   const cartItems = [
     {
@@ -26,6 +26,14 @@ export default function OrderConfirmation() {
     <div className={styles.orderConfirmationContainer}>
       <div className={styles.orderConfirmationContainer2}>
         <div className={styles.checkoutFormWrapper}>
+          <h1 className={styles.checkoutTitle}>
+            <span>
+              Order <i>Confirmation</i>
+            </span>{" "}
+            <b>
+              <BsPatchCheck />
+            </b>
+          </h1>
           {cartItems?.length > 0 ? (
             cartItems.map((item) => (
               <CartItem
@@ -38,7 +46,7 @@ export default function OrderConfirmation() {
           ) : (
             <p>Your cart is empty</p>
           )}
-              <div className={styles.priceContainer}>
+          <div className={styles.priceContainer}>
             <p className={styles.priceText}>
               <span>Subtotal</span> <b> $26.97</b>
             </p>
@@ -56,7 +64,6 @@ export default function OrderConfirmation() {
               icon={<PiArrowRight />}
               size="large"
               shape="round"
-              
               // onClick={handleButtonClick}
               className="additional-class"
               iconStyle={{ color: "white", marginLeft: "5px" }} // Custom icon styles

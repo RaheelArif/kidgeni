@@ -67,6 +67,8 @@
     font-family: var(--font-lora) !important;
     display: inline-block; /* Needed for transform */
     transform: skewX(-3deg); /* Skews text by 20 degrees */
+    font-weight: 400;
+    font-size: 1.4rem;
   }
 }
 .orderConfirmationContainer {
@@ -83,5 +85,32 @@
 
   .checkoutFormWrapper {
     width: 100%;
+  }
+}
+.checkoutTitle {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-style: normal;
+  }
+  span {
+    font-family: var(--font-lora), serif !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-5deg); /* Skews text by 20 degrees */
+  }
+  b {
+    padding: 10px;
+    background-color: #ede7fe;
+    border-radius: 50%;
+    color: #7e54f6;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

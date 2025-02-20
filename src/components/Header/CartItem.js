@@ -9,7 +9,7 @@ const CartItem = ({ item, bgFalse, borderBottom, btn2 }) => {
       style={{
         background: bgFalse ? "transparent" : "#EDE7FE",
         borderBottom: borderBottom ? "1px solid black" : "none",
-        borderRadius: borderBottom ? "0px" : "10px",
+        borderRadius: borderBottom ? "0px" : "20px",
       }}
       className={styles.cartItem}
     >

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function ForgetPassword() {
   return (
-    <div>
+    <div className="height-100">
       <Header />
       <div className="signup-page-bg">
         <ForgetForm />

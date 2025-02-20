@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Login() {
   return (
-    <div>
+    <div className="height-100" >
       <Header />
       <div className="login-page-bg">
         <LoginForm />

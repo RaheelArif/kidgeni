@@ -5,26 +5,26 @@ body {
   padding: 0px 80px;
 }
 .login-page-bg {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding-top: 100px;
   background-image: url("/backgournds/login-bg.png"); /* Path to your image */
-  background-size: contain; /* Adjust as needed: cover, contain, etc. */
+  background-size: 100% 100%; /* Adjust as needed: cover, contain, etc. */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center bottom; /* Optional: Position the background image */
 }
 .signup-page-bg {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding-top: 100px;
   background-image: url("/backgournds/forget-pass-bg.png"); /* Path to your image */
-  background-size: contain; /* Adjust as needed: cover, contain, etc. */
+  background-size: 100% 100%; /* Adjust as needed: cover, contain, etc. */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center bottom; /* Optional: Position the background image */
 }
 .pricing-container {
   background-image: url("/backgournds/plans-bg.png"); /* Path to your image */
-  background-size: contain; /* Adjust as needed: cover, contain, etc. */
+  background-size: 100% 100%; /* Adjust as needed: cover, contain, etc. */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center center; /* Optional: Position the background image */
 
@@ -39,6 +39,7 @@ body {
 }
 .light-bg {
   background-color: #f2f2f2;
+  min-height: 100vh;
 }
 .my-slider .ant-menu-item {
   background-color: transparent;
@@ -68,13 +69,18 @@ body {
   width: 100%;
 
   padding: 100px 0px;
-  margin:100px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   background-image: url("/backgournds/contact-us-bg.png"); /* Path to your image */
   background-size: 100% 100%; /* Adjust as needed: cover, contain, etc. */
   /* Adjust as needed: cover, contain, etc. */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center center;
 }
-.ant-select-single.ant-select-lg .ant-select-selector{
-border-radius: 30px !important;
+.ant-select-single.ant-select-lg .ant-select-selector {
+  border-radius: 30px !important;
+}
+.height-100 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div>
+    <div className="height-100">
       <Header />
       <div className="login-page-bg">
         <SignupForm />
