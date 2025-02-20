@@ -1,9 +1,23 @@
 .profileTitle {
   padding-bottom: 30px;
   border-bottom: 1px solid black;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+  height: 250px;
+  font-size: 100px;
+  background-image: url("/backgournds/profile-bg.png"); /* Path to your image */
+  background-size: auto 100%; /* Adjust as needed: cover, contain, etc. */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center right; /* Optional: Position the background image */
+  span {
+    font-family: var(--font-lora), serif !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-5deg); /* Skews text by 20 degrees */
+  }
 }
-
+.formGroup21 {
+  display: flex;
+  gap: 10;
+}
 .profileContainer {
   display: flex;
   align-items: flex-start;
@@ -13,14 +27,20 @@
 
 .profileImageContainer {
   position: relative;
+  width: 270px;
+  min-width: 270px;
+  height: 220px;
+  padding: 10px 10px 0px;
+  border-radius: 20px;
+  background-color: rgb(232, 255, 174);
 }
 
 .profileImage {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
+  width: 100%;
+
+  height: 100%;
   object-fit: contain;
-  background-color: rgb(232, 255, 174);
+  position: relative;
 }
 
 .editIcon {
@@ -39,7 +59,7 @@
 .profileForm {
   display: flex;
   flex-direction: column;
-  padding:0px 20px;
+  padding: 0px 20px;
   width: 100%;
 }
 .formGroup {
@@ -56,7 +76,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px !important;
   padding: 8px 15px;
-  margin-top: 5px  !important;
+  margin-top: 5px !important;
   margin-bottom: 10px !important;
   &:focus {
     outline: none;

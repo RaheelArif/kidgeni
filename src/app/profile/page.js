@@ -4,7 +4,7 @@ import React from "react";
 import style from "./profile.module.scss";
 import { Button, Input } from "antd";
 import { EditOutlined } from "@ant-design/icons";
-import dummyCat from "/public/images/dummyCat.png";
+import dummyCat from "/public/images/surrealist-portrait-kid 1.png";
 import Image from "next/image";
 import BlackButton from "@/components/ui/BlackButton";
 import { PiArrowRight } from "react-icons/pi";
@@ -12,7 +12,10 @@ import { PiArrowRight } from "react-icons/pi";
 const ProfilePage = () => {
   return (
     <WebLayout>
-      <h1 className={style.profileTitle}>Alena Ekstrom</h1>
+      <h1 className={style.profileTitle}>
+        Alena <br />
+        <span>Ekstrom</span>
+      </h1>
       <div className={style.profileContainer}>
         <div className={style.profileImageContainer}>
           <Image src={dummyCat} alt="Profile" className={style.profileImage} />
@@ -30,28 +33,30 @@ const ProfilePage = () => {
               className={style.inputField}
             />
           </div>
-          <div className={style.formGroup}>
-            <label htmlFor="email">Email</label>
-            <Input
-              size="large"
-              id="email"
-              placeholder="alenaekstrom@gmail.com"
-              className={style.inputField}
-            />
-          </div>
-          <div className={style.formGroup}>
-            <label htmlFor="password">Password</label>
-            <Input.Password
-              size="large"
-              id="password"
-              placeholder="**********"
-              className={style.inputField}
-            />
+          <div className={style.formGroup21}>
+            <div className={style.formGroup}>
+              <label htmlFor="email">Email</label>
+              <Input
+                size="large"
+                id="email"
+                placeholder="alenaekstrom@gmail.com"
+                className={style.inputField}
+              />
+            </div>
+            <div style={{ marginLeft: "10px" }} className={style.formGroup}>
+              <label htmlFor="password">Password</label>
+              <Input.Password
+                size="large"
+                id="password"
+                placeholder="**********"
+                className={style.inputField}
+              />
+            </div>
           </div>
           <div className={style.saveButtonContainer}>
-            <div  style={{width:"100px"}}>
+            <div style={{ width: "100px" }}>
               <BlackButton
-              paddingRight={"50px"}
+                paddingRight={"50px"}
                 text="Save"
                 icon={<PiArrowRight />}
                 size="large"
