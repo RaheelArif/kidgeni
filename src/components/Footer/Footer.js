@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.scss";
+import DropdownMenu from "./DropdownMenu";
 
 export default function Footer() {
   return (
@@ -18,8 +19,12 @@ export default function Footer() {
           Support
         </a>
       </nav>
-      <h1 className={styles.logo}>Lorem <span style={{color:"white"}}>Ipsum</span></h1>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur. </p>
+      <h1 className={styles.logo}>
+        Lorem <span style={{ color: "white" }}>Ipsum</span>
+      </h1>
+      <p className={styles.text}>
+        Lorem ipsum dolor sit amet consectetur. <DropdownMenu />{" "}
+      </p>
     </footer>
   );
 }

@@ -5,7 +5,7 @@ import React from "react";
 const Usage = () => {
   return (
     <WebLayout>
-      <h1 >Usage</h1>
+      <h1>Usage</h1>
     </WebLayout>
   );
 };
