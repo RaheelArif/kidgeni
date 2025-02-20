@@ -1,5 +1,5 @@
 .popularArtSectionContainer {
-  padding: 60px 0px;
+  padding: 60px 0px 200px 0px;
   display: flex;
   flex-direction: column;
   background-color: #ede7fe;
@@ -14,6 +14,8 @@
 }
 .mainTitle {
   margin-bottom: 5px !important;
+  font-size: 50px !important;
+  font-weight: 400 !important;
 }
 .subTitle {
   color: #666;
@@ -23,8 +25,17 @@
   justify-content: center;
   margin-bottom: 15px;
   width: 100%;
+  
 }
-
+.cards1COntainer{
+  margin-top: -120px;
+  padding: 100px 0px;
+  background-image: url("/backgournds/discover-bg.png"); /* Path to your image */
+  background-size: 100% 100%; /* Adjust as needed: cover, contain, etc. */
+  /* Adjust as needed: cover, contain, etc. */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center;
+}
 .cardsWrapper {
   display: flex;
   padding: 10px;
@@ -36,6 +47,7 @@
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
   }
+  
 }
 
 .card {
@@ -60,10 +72,13 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  box-shadow: 2px 2px black;
+  border: 1px solid black;
 
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px  !important;
+  min-width: 40px  !important;
+  height: 40px !important;
 }
 
 .selected {

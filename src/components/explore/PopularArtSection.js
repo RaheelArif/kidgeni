@@ -81,112 +81,126 @@ const PopularArtSection = () => {
   }, []);
 
   return (
-    <div className={styles.popularArtSectionContainer}>
-      <div className={styles.titlesWrapper}>
-        <Title level={2} className={styles.mainTitle}>
-          Popular Art
-        </Title>
-        <Paragraph className={styles.subTitle}>
-          Lorem ipsum dolor sit amet consectetur
-        </Paragraph>
-      </div>
-      <div className={styles.cardsScrollWrapper}>
-        <div
-          className={styles.cardsWrapper}
-          ref={cardsWrapperRef} // Attach the ref to cardsWrapper
-        >
-          {filters.map((filter) => (
-            <div
-              key={filter.value}
-              className={`${styles.card} ${
-                selectedFilter === filter.value ? styles.selected : ""
-              }`}
-              style={{ backgroundColor: filter.color }}
-              onClick={() => handleFilterChange(filter.value)}
-            >
-              <span>{filter.label}</span>
-              <span className={styles.filterIcon}>{filter.icon}</span>
-            </div>
-          ))}
+    <div>
+      <div className={styles.popularArtSectionContainer}>
+        <div className={styles.titlesWrapper}>
+          <Title level={2} className={styles.mainTitle}>
+            Popular Art
+          </Title>
+          <Paragraph className={styles.subTitle}>
+            Lorem ipsum dolor sit amet consectetur
+          </Paragraph>
+        </div>
+        <div className={styles.cardsScrollWrapper}>
+          <div
+            className={styles.cardsWrapper}
+            ref={cardsWrapperRef} // Attach the ref to cardsWrapper
+          >
+            {filters.map((filter) => (
+              <div
+                key={filter.value}
+                className={`${styles.card} ${
+                  selectedFilter === filter.value ? styles.selected : ""
+                }`}
+                style={{ backgroundColor: filter.color }}
+                onClick={() => handleFilterChange(filter.value)}
+              >
+                <span>{filter.label}</span>
+                <span className={styles.filterIcon}>{filter.icon}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="container">
-        <Row gutter={[16, 16]}>
-        <Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col><Col  md={12} lg={6}>
-            <PopularCard
-              imageUrl={dummyCatImage}
-              title="Cat Orange Standing"
-              likes={100}
-            />
-          </Col>
-       
-        </Row>
+      <div className={styles.cards1COntainer}>
+        <div className={`container`}>
+          <Row gutter={[16, 16]}>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+            <Col md={12} lg={6}>
+              <PopularCard
+                imageUrl={dummyCatImage}
+                title="Cat Orange Standing"
+                likes={100}
+              />
+            </Col>
+          </Row>
+        </div>
       </div>
     </div>
   );

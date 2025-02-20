@@ -13,7 +13,7 @@ const DiscoverSection = () => {
   return (
     <div className={styles.discoverSectionContainer}>
       <div className={styles.titlesWrapper}>
-        <p className={styles.mainTitle}>Discover Children Creations</p>
+        <p className={styles.mainTitle}>Discover <span>Children Creations</span></p>
       </div>
       <Space className={styles.selectWrapper}>
         <Select
@@ -41,9 +41,9 @@ const DiscoverSection = () => {
         <Select
           defaultValue="All Function"
           size="large"
-      
           className={styles.selectMenu}
           onChange={handleSelectChange}
+          
           options={[
             { value: "All Function", label: "All Function" },
             { value: "Learning", label: "Learning" },
