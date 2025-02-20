@@ -58,7 +58,7 @@ const CheckoutForm = () => {
                       name="firstName"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input your first name!",
                         },
                       ]}
@@ -76,7 +76,7 @@ const CheckoutForm = () => {
                       name="lastName"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input your last name!",
                         },
                       ]}
@@ -94,7 +94,7 @@ const CheckoutForm = () => {
                   label="Address"
                   name="address"
                   rules={[
-                    { required: true, message: "Please input your address!" },
+                    { required: false, message: "Please input your address!" },
                   ]}
                 >
                   <Input
@@ -111,7 +111,7 @@ const CheckoutForm = () => {
                       name="country"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input your country!",
                         },
                       ]}
@@ -128,7 +128,10 @@ const CheckoutForm = () => {
                       label="State"
                       name="state"
                       rules={[
-                        { required: true, message: "Please input your state!" },
+                        {
+                          required: false,
+                          message: "Please input your state!",
+                        },
                       ]}
                     >
                       <Input
@@ -144,7 +147,7 @@ const CheckoutForm = () => {
                       name="zipCode"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input your zip code!",
                         },
                       ]}
@@ -175,7 +178,7 @@ const CheckoutForm = () => {
                       name="nameCard"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input name on card!",
                         },
                       ]}
@@ -193,7 +196,7 @@ const CheckoutForm = () => {
                       name="cardNumber"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input card number!",
                         },
                       ]}
@@ -214,7 +217,7 @@ const CheckoutForm = () => {
                       name="expireDate"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input card expiration date!",
                         },
                       ]}
@@ -232,7 +235,7 @@ const CheckoutForm = () => {
                       name="cvc"
                       rules={[
                         {
-                          required: true,
+                          required: false,
                           message: "Please input security code!",
                         },
                       ]}
@@ -262,8 +265,11 @@ const CheckoutForm = () => {
             </div>
           </div>
         </Col>
-        <Col xs={24} md={24} lg={12}>
-          <Title level={4} className={styles.sectionTitle}>
+        <Col xs={24} md={24} lg={12} className={styles.rightRideBx}>
+          <Title
+            level={4}
+            className={`${styles.sectionTitle} ${styles.sectionTitle21}`}
+          >
             Your Order
           </Title>
           {cartItems?.length > 0 ? (
@@ -271,6 +277,7 @@ const CheckoutForm = () => {
               <CartItem
                 borderBottom={true}
                 bgFalse={true}
+                btn2={true}
                 key={item.id}
                 item={item}
               />

@@ -9,14 +9,25 @@
 }
 
 .checkoutTitle {
-  margin-bottom: 20px;
+  margin-bottom: 30px !important;
   text-align: left;
+  font-weight: 400 !important;
+  font-size: 40px !important;
 }
 .formSection {
   margin-bottom: 20px;
 }
 .sectionTitle {
   margin-bottom: 20px !important;
+  font-family: var(--font-lora) !important;
+  display: inline-block; /* Needed for transform */
+  transform: skewX(-3deg); /* Skews text by 20 degrees */
+}
+.sectionTitle21 {
+  margin-top: 80px;
+}
+.rightRideBx {
+  padding: 10px;
 }
 .checkoutForm,
 .paymentForm {
@@ -50,7 +61,13 @@
 .priceText {
   padding: 0px 10px;
   display: flex;
+  font-size: 1.2rem;
   justify-content: space-between;
+  b {
+    font-family: var(--font-lora) !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-3deg); /* Skews text by 20 degrees */
+  }
 }
 .orderConfirmationContainer {
   display: flex;
