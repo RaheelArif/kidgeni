@@ -1,0 +1,28 @@
+.title {
+  font-weight: 400;
+  span {
+    font-family: var(--font-lora), serif !important;
+    display: inline-block; /* Needed for transform */
+    transform: skewX(-5deg); /* Skews text by 20 degrees */
+  }
+}
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.dataContainer {
+  background-color: #f6f6f6;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 30px;
+  overflow-y: auto;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cardRow {
+  margin-top: 30px;
+}

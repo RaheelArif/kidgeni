@@ -1,0 +1,44 @@
+.customBlackTabsContainer {
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Vertically center items */
+    overflow: hidden; /* Prevent content overflow */
+    width: fit-content;  /* Adjust to content width */
+  }
+  
+  .tabItem {
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 20px;
+    margin-right: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;  /* Indicate it's clickable */
+    transition: background-color 0.2s ease; /* Smooth transition */
+  
+    &:hover {
+      color: black;
+      background-color: #e6e6e6; /* Slightly darker hover */
+    }
+  
+    &:first-child {
+      margin-left: 0;  /* Remove left margin on the first item */
+    }
+  
+    &:last-child {
+      margin-right: 0; /* Remove right margin on the last item */
+    }
+  }
+  
+  .tabItemActive {
+    background-color: #000000;
+    color: white;
+  
+    &:hover {
+      color: white;
+      background-color: #333; /* Slightly darker hover when active */
+    }
+  }

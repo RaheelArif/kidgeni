@@ -1,0 +1,40 @@
+.themeTabsContainer {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;  /*Consistent Gap Between Tabs*/
+  }
+  
+  .tabItem {
+    background-color: white;  /*Lighter Grey Background*/
+    border: none;
+    border-radius: 20px; /*More Rounded*/
+    padding: 5px 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);  /*Slightly Darker Text*/
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease; /*Smooth Transitions*/
+  
+    &:hover {
+      background-color: #e6e6e6; /*Darker Hover*/
+    }
+  }
+  
+  .tabItemActive {
+    background-color: #7E54F6;  /*Purple Background*/
+    color: white;
+  
+    &:hover {
+      background-color: #7E54F6;  /*Darker Purple on Hover*/
+    }
+  }
+  
+  /*Optional: For Larger Screens*/
+  @media (min-width: 768px) {
+    .themeTabsContainer {
+      gap: 12px; /*Wider Gap on Larger Screens*/
+    }
+    .tabItem {
+      padding: 10px 20px; /*Slightly Larger Padding on Larger Screens*/
+    }
+  }

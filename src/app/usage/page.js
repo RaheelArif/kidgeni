@@ -1,13 +1,14 @@
 "use client";
 import WebLayout from "@/components/layout/WebLayout";
+import Usage from "@/components/usage/Usage";
 import React from "react";
 
-const Usage = () => {
+const UsagePage = () => {
   return (
     <WebLayout>
-      <h1>Usage</h1>
+      <Usage />
     </WebLayout>
   );
 };
 
-export default Usage;
+export default UsagePage;
