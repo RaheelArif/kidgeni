@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import styles from './CustomBlackTabs.module.scss';
 
-const CustomBlackTabs = ({ tabItems, children }) => {
-  const [activeKey, setActiveKey] = useState(tabItems[0].key);
+const CustomBlackTabs = ({ tabItems, children , activeKey, setActiveKey }) => {
 
   const onChange = (key) => {
     setActiveKey(key);

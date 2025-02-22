@@ -1,0 +1,70 @@
+// UsageItem.module.scss
+
+.usageItemContainer {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* Define column widths */
+  align-items: center; /* Vertically align items */
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin-bottom: 10px; /* Spacing between items */
+  border: 1px solid #1d1d1d; /* subtle border */
+}
+
+.nameColumn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+}
+
+.catImage {
+  border-radius: 10px; /* Make the image circular */
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+.fiturColumn,
+.modelColumn,
+.usedCoinColumn {
+  text-align: left; /* Align text to the left */
+  color: #555; /* Slightly darker text color */
+}
+
+.usedCoinColumn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.coinIcon {
+  display: inline-flex;
+  align-items: center; /* Center the icon vertically */
+  img {
+    width: 25px;
+    margin-right: 5px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+  .usageItemContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .fiturColumn,
+  .modelColumn {
+    display: none;
+  }
+  .nameColumn {
+    justify-content: center;
+  }
+
+  .usedCoinColumn {
+    justify-content: center;
+  }
+}

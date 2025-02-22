@@ -5,29 +5,30 @@ import ThemeTabs from "../ui/ThemeTabs";
 import UsageCard from "./UsageCard";
 import catImg from "/public/images/cat2.png";
 import { Row, Col } from "antd";
+import MonthlyActivity from "./MonthlyActivity";
 
+const tabItems = [
+  { label: "Token usage", key: "tokenUsage" },
+  { label: "Monthly activity", key: "monthlyActivity" },
+];
+const tabItems2 = [
+  { label: "All", key: "all" },
+  { label: "3D Modelling", key: "3dModelling" },
+  { label: "Art", key: "art" },
+  { label: "Stories", key: "stories" },
+  { label: "Books", key: "books" },
+  { label: "Doodles", key: "doodles" },
+  { label: "Learn-to-draw", key: "learnToDraw" },
+];
 export default function Usage() {
   const [activeTab, setActiveTab] = useState("all");
-
-  const tabItems2 = [
-    { label: "All", key: "all" },
-    { label: "3D Modelling", key: "3dModelling" },
-    { label: "Art", key: "art" },
-    { label: "Stories", key: "stories" },
-    { label: "Books", key: "books" },
-    { label: "Doodles", key: "doodles" },
-    { label: "Learn-to-draw", key: "learnToDraw" },
-  ];
+  const [activeKey1, setActiveKey1] = useState(tabItems[0].key);
 
   const handleTabClick = (key) => {
     setActiveTab(key);
     console.log(`Tab ${key} clicked: ${key}`);
     // Add your logic to handle tab clicks
   };
-  const tabItems = [
-    { label: "Token usage", key: "tokenUsage" },
-    { label: "Monthly activity", key: "monthlyActivity" },
-  ];
 
   // Dummy data for UsageCards (replace with your actual data)
   const cardData = [
@@ -51,27 +52,37 @@ export default function Usage() {
         <h1 className={styles.title}>
           Usage <span>Tracking</span>
         </h1>
-        <CustomBlackTabs tabItems={tabItems}></CustomBlackTabs>
+        <CustomBlackTabs
+          tabItems={tabItems}
+          activeKey={activeKey1}
+          setActiveKey={setActiveKey1}
+        ></CustomBlackTabs>
       </div>
 
-      <div className={styles.dataContainer}>
-        <ThemeTabs tabItems={tabItems2} onTabClick={handleTabClick} />
-        <Row className={styles.cardRow} gutter={[20, 20]}>
-          {" "}
-          {/* gutter adds spacing between the cards */}
-          {cardData.map((card, index) => (
-            <Col xs={24} sm={12} md={8} lg={8} key={index}>
-              {" "}
-              {/* 3 cards per row on medium and larger screens */}
-              <UsageCard
-                imageUrl={card.imageUrl}
-                title={card.title}
-                category={card.category}
-              />
-            </Col>
-          ))}
-        </Row>
-      </div>
+      {activeKey1 === "tokenUsage" ? (
+        <div className={styles.dataContainer}>
+          <ThemeTabs tabItems={tabItems2} onTabClick={handleTabClick} />
+          <Row className={styles.cardRow} gutter={[20, 20]}>
+            {" "}
+            {/* gutter adds spacing between the cards */}
+            {cardData.map((card, index) => (
+              <Col xs={24} sm={12} md={8} lg={8} key={index}>
+                {" "}
+                {/* 3 cards per row on medium and larger screens */}
+                <UsageCard
+                  imageUrl={card.imageUrl}
+                  title={card.title}
+                  category={card.category}
+                />
+              </Col>
+            ))}
+          </Row>
+        </div>
+      ) : (
+        <div className={styles.dataContainer}>
+            <MonthlyActivity />
+        </div>
+      )}
     </div>
   );
 }
